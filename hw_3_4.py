@@ -9,13 +9,21 @@ def get_upcoming_birthdays(users):
         if bday < current_date: #якщо дн вже пройшов, додаємо 1 рік
             bday = bday.replace(year = current_date.year + 1)
             if bday.toordinal() - current_date.toordinal() < 7: #якщо різниця менше 7 днів:
-                if bday.weekday()
+                if bday.weekday() == 5:
+                    bday = bday + dt.timedelta(days=2)
+                elif bday.weekday() == 6:
+                    bday = bday + dt.timedelta(days=1)
+                else:
+                    pass
+            pass
+        pass
+    pass                    
 
-        print(bday)
 
 users = [
     {"name": "John Doe", "birthday": "1985.01.23"},
-    {"name": "Jane Smith", "birthday": "1990.01.27"}
+    {"name": "Jane Smith", "birthday": "1990.01.27"},
+    {"name": "Anthon Asieiev", "birthday": "1972.01.27"}
 ]
 
 get_upcoming_birthdays(users)
