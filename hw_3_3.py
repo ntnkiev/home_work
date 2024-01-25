@@ -20,6 +20,7 @@ raw_numbers = [
     "(050)8889900",
     "38050-111-22-22",
     "38050 111 22 11   ",
+    "+1 646 980 4741 "
 ]
 for num in raw_numbers:
     print(normalize_phone(num))
