@@ -8,3 +8,9 @@ def get_numbers_ticket(min, max, quantity):
         return numbers
     else:
         return []
+
+min = 1
+max = 36
+quantity = 6
+
+print(get_numbers_ticket(min, max, quantity))

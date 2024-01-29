@@ -1,0 +1,3 @@
+These header files are furnished without any express or implied warranty.  They may be used in any way a developer sees fit. They provide class information for SLDMG.DLL. 
+
+To use it, link your project with SLDMG.LIB.  For Unicode these names are SLDMGU.DLL and SLDMGU.LIB respectively.  These files can be found in the base directory of your SolidWorks installation.  Include the MGDEF.H file into your code and then any of the other .h files you wish to reference.  These headers can be found in the ../include directory of your SolidWorks installation.
